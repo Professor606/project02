@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Color & Transparency Demo</title>
+</head>
+<body>
+
+  <div class="palette-container">
+    <div class="swatch color-named">
+      <span>Named</span>
+      <code>crimson</code>
+    </div>
+    <div class="swatch color-hex">
+      <span>HEX (6-digit)</span>
+      <code>#dc143c</code>
+    </div>
+    <div class="swatch color-rgb">
+      <span>RGB</span>
+      <code>rgb(220, 20, 60)</code>
+    </div>
+    <div class="swatch color-rgba">
+      <span>RGBA (50% Alpha)</span>
+      <code>rgba(220, 20, 60, 0.5)</code>
+    </div>
+  </div>
+
+  <div class="comparison-wrapper">
+    
+    <!-- Element using opacity -->
+    <div class="demo-box box-opacity">
+      <h3>opacity: 0.5;</h3>
+      <p>Look at the black border around this box, this text, and the yellow child element below. <strong>Everything</strong> is faded.</p>
+      <div class="child-element">child element</div>
+    </div>
+
+    <!-- Element using RGBA -->
+    <div class="demo-box box-rgba">
+      <h3>background-color: rgba(...)</h3>
+      <p>Look at the black border, this text, and the yellow child element below. They are <strong>100% solid and fully opaque</strong>.</p>
+      <div class="child-element">child element</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

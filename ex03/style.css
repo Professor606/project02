@@ -1,0 +1,91 @@
+body {
+    padding: 30px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.palette-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.swatch {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.color-named {
+    background-color: crimson;
+}
+
+.color-hex {
+    background-color: #dc143c;
+}
+
+/* 6-digit Hex */
+.color-rgb {
+    background-color: rgb(220, 20, 60);
+}
+
+.color-rgba {
+    background-color: rgba(220, 20, 60, 0.5);
+}
+
+
+.swatch code {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    padding: 2px 5px;
+}
+
+.comparison-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+}
+
+.demo-box {
+    flex: 1;
+    padding: 25px;
+    border: 4px solid #000;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-opacity {
+    background-color: rgb(0, 100, 200);
+    opacity: 0.5;
+}
+
+.box-rgba {
+    background-color: rgba(0, 100, 200, 0.5);
+}
+
+.demo-box h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.demo-box p {
+    font-size: 1.1rem;
+}
+
+.child-element {
+    background: #ffc107;
+    color: #000;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
