@@ -2,78 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
   <title>Box-Sizing Comparison</title>
-  <style>
-    /* 1. Universal Reset */
-    *, *::before, *::after {
-      box-sizing: border-box; /* Sets the default to border-box */
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    .comparison-container {
-      display: flex;
-      gap: 50px;
-      margin-top: 20px;
-    }
-
-    /* Base styles applied to BOTH boxes */
-    .box {
-      width: 250px;       /* Declared Width */
-      height: 250px;
-      padding: 30px;      /* Inner space */
-      border: 15px solid #2c3e50; /* Outer boundary */
-      margin-top: 10px;
-    }
-
-    /* 2. Content Box (Overriding the universal reset for comparison) */
-    .content-box {
-      box-sizing: content-box;
-      background-color: #ffb8b8;
-    }
-
-    /* 3. Border Box (Already applied via reset, but explicit here for clarity) */
-    .border-box {
-      box-sizing: border-box;
-      background-color: #b8e9ff;
-    }
-  </style>
 </head>
 <body>
-
-  <h1>CSS Box-Sizing Comparison</h1>
-  <p>Both boxes are given the exact same CSS properties: <strong>width: 250px</strong>, <strong>padding: 30px</strong>, and a <strong>15px border</strong>.</p>
-
   <div class="comparison-container">
     
-    <!-- Content Box Demo -->
     <div>
-      <h2>content-box</h2>
+      <h3>content-box</h3>
       <div class="box content-box">
-        <strong>Actual Width: 340px</strong><br><br>
-        (250px width + 60px left/right padding + 30px left/right border)<br><br>
-        <em>Padding and border get added to the outside.</em>
+        <h3>Actual Width: 340px</h3>
       </div>
     </div>
 
-    <!-- Border Box Demo -->
     <div>
-      <h2>border-box</h2>
+      <h3>border-box</h3>
       <div class="box border-box">
-        <strong>Actual Width: 250px</strong><br><br>
-        (Padding and border are absorbed inside the initial 250px limit)<br><br>
-        <em>The box stays exactly the size you told it to be.</em>
+        <h3>Actual Width: 250px</h3>
       </div>
     </div>
-
   </div>
-
 </body>
 </html>

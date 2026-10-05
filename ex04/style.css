@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px;
+    color: #333;
+}
+
+.comparison-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    border: 15px solid #2c3e50;
+    margin-top: 10px;
+}
+
+.content-box {
+    box-sizing: content-box;
+    background-color: #ffb8b8;
+}
+
+.border-box {
+    box-sizing: border-box;
+    background-color: #b8e9ff;
+}

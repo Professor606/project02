@@ -1,0 +1,22 @@
+.card {
+    width: 200px;
+    padding: 20px;
+    margin: 50px;
+    background-color: lightblue;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-8px) scale(1.05);
+}

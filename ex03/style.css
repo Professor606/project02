@@ -1,7 +1,5 @@
 body {
     padding: 30px;
-    background-color: #f8f9fa;
-    color: #333;
 }
 
 .palette-container {
@@ -32,7 +30,6 @@ body {
     background-color: #dc143c;
 }
 
-/* 6-digit Hex */
 .color-rgb {
     background-color: rgb(220, 20, 60);
 }
@@ -41,11 +38,9 @@ body {
     background-color: rgba(220, 20, 60, 0.5);
 }
 
-
 .swatch code {
     font-size: 0.9rem;
     margin-top: 5px;
-    padding: 2px 5px;
 }
 
 .comparison-wrapper {
